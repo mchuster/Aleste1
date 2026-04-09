@@ -286,4 +286,17 @@ public class LinkedListOfInteger {
        }
         return -1;
     }
+
+    public int lastindexOf(int element){
+        Node aux = head;
+        int contador = -1;
+        for(int i = 0; i < count; i++){
+            if(element == aux.element){
+                contador = i;
+            }
+
+            aux = aux.next;
+        }
+        return contador;
+    }
 }
